@@ -8,7 +8,7 @@ In this project, I collaborated with my classmates to implement the task using s
 
 One Example:
 
-![](train_7.png)
+![](Train_7.png)
 
 They used data from Chong et al. (2015), which is stored in the CYCLoPs database (Koh et al., 2015), before segmentation or cropping. They cropped 64x64 pixel blocks centred on a single cell from the microscope images, so there may be other surrounding cells with the same fluorescence pattern. The specific fluorescence pattern of a cell provides information about the subcellular location. The red and green channels in the image mark the location of cell bodies and proteins, respectively. The dataset consists of 65,000 training samples, 12,500 validation samples, and 12,500 test samples from 12 subcellular localisation categories (pericellular, cytoplasmic, endosomal, endoplasmic reticulum, Golgi, mitochondrial, nuclear periphery, nucleolus, nucleus, peroxisomes, spindle poles, and vesicles), which are imbalanced in number of samples.
 
