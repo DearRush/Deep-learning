@@ -4,7 +4,7 @@
 
 This is a modest deep learning project on the classification of subcellular images of fluorescent proteins.
 
-In this project, I collaborated with my classmates to implement the task using several classical models of computer vision such as ordinary multilayer perceptron, VGG-16, support vector machine(SVM), Resnet, etc. The models were built using python `pytorch`, and the exact code is in the `code` folder. The `PPT` folder and the `Report` folder contain the PPT (including the lecture video) and the written report submitted for our eventual course defence, respectively. And the data examples we used are in the `data` folder, which contains segmented high-throughput microscopy image data from a study by Pärnamaa and Parts (2017). 
+In this project, I collaborated with my classmates to implement the task using several classical models of computer vision such as ordinary multilayer perceptron, VGG-16, support vector machine(SVM), Resnet, etc. The models were built using python `pytorch`, and the exact codes are in the `code` folder. The `PPT` folder and the `Report` folder contain the PPT (including the report video) and the written report submitted for our eventual course defence, respectively. And the data examples we used are in the `data` folder, which contains segmented high-throughput microscopy image data from a study by Pärnamaa and Parts (2017). 
 
 One Example:
 
@@ -24,9 +24,7 @@ The final accuracy we obtained for each model under each dataset is shown below:
 
 Based on the results, we can see that SVM can outperform the simple Convolutional Neural Network CNN in terms of classification ability and this is due to the fact that:
 
-Deep learning is data-driven, so it is easy for deep learning models to overfit when the amount of data is small. In our experiments, the
-
-train dataset is significantly more accurate, SVM does not require a lot of tuning, and after choosing the appropriate kernel function, it has good nonlinear classification ability, and shows good classification ability even with a small amount of data.
+Deep learning is data-driven, so it is easy for deep learning models to overfit when the amount of data is small. In our experiments, the train dataset is significantly more accurate, SVM does not require a lot of tuning, and after choosing the appropriate kernel function, it has good nonlinear classification ability, and shows good classification ability even with a small amount of data.
 
 However, the training time of SVM is significantly longer than that of deep learning networks, which is due to the fact that in deep learning we use GPU acceleration for matrix operations, and deep learning algorithms rely heavily on high-end machines, contrary to traditional machine learning algorithms, which can run on low-end machines. Deep learning algorithms essentially do a lot of matrix multiplication operations, and using the GPU effectively optimises these operations.
 
